@@ -17,4 +17,4 @@ height = window.outerHeight
 // of the layout
 var content = document.querySelector('.content-wrapper')
 //content.style.minHeight = (height - 179) + 'px'
-content.style.minHeight = (height - 134) + 'px'
+content.style.minHeight = (height - 163) + 'px'

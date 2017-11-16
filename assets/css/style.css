@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a {
+  text-decoration: none;
+}
 .wrapper {
   min-height: 100%;
   position: relative;
@@ -26,6 +29,36 @@ header {
 header .logo {
   background-color: #367fa9;
   color: white;
+  -webkit-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  display: block;
+  float: left;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  width: 230px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 15px;
+  font-weight: 300;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+header .navbar {
+  background-color: #3c8dbc;
+  -webkit-transition: margin-left .3s ease-in-out;
+  -o-transition: margin-left .3s ease-in-out;
+  transition: margin-left .3s ease-in-out;
+  margin-bottom: 0;
+  margin-left: 230px;
+  border: none;
+  min-height: 50px;
+  border-radius: 0
+}
+header .navbar div.navbar-custom-menu {
+  float: right;
 }
 
 /**
@@ -46,6 +79,40 @@ header .logo {
 section.sidebar {
 
 }
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-menu>li.header {
+  colr: #4b646f;
+  background: #1a2226;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap !important;
+  padding: 10px 25px 10px 15px;
+  font-size: 12px
+}
+.sidebar-menu>li>a {
+  position: relative;
+  color: #fff;
+  padding: 12px 5px 12px 15px;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-menu>li>a>.fa {
+  width: 20px;
+}
+.sidebar-menu>li.active>a{
+  background: #1e282c;
+  border-left: 3px solid #3c8dbc;
+  padding: 12px 5px 12px 12px;
+}
+.sidebar-menu>li>a:hover {
+  background: #1e282c;
+  border-left: 3px solid #3c8dbc;
+  padding: 12px 5px 12px 12px;
+}
 
 /**
  *
@@ -56,6 +123,7 @@ section.sidebar {
   background-color: #ecf0f5;
   z-index: 990;
   min-height: 100%;
+  margin-left: 230px; /* for sidebar */
 }
 
 .content-header {
@@ -82,9 +150,10 @@ section.sidebar {
  * Footer
  *
  **/
- footer {
-   background: #ffffff;
-   padding: 15px;
-   colot: #444;
-   border-top: 1px solid #d2d6de;
+footer {
+  background: #ffffff;
+  padding: 15px;
+  colot: #444;
+  border-top: 1px solid #d2d6de;
+  margin-left: 230px; /* for sidebar */
  }
