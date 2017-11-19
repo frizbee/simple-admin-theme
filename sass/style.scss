@@ -190,6 +190,37 @@ section.sidebar {
   padding-right: 15px;
 }
 
+.stats {
+  .card {
+    .card-body {
+      border: 1px solid red;
+    }
+    .btn {
+      width: 100% !important;
+      background: rgba(0,0,0,0.1);
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+
+.bg-orange {
+  background-color: $orange;
+  color: #fff;
+}
+.bg-teal {
+  background-color: $teal;
+  color: #fff;
+}
+.bg-cyan {
+  background-color: $cyan;
+  color: #fff;
+}
+.bg-green {
+  background-color: $green;
+  color: #fff;
+}
+
 /**
  *
  * Footer

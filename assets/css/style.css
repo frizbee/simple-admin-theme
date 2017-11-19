@@ -6532,6 +6532,30 @@ header .navbar div.navbar-custom-menu {
   padding-left: 15px;
   padding-right: 15px; }
 
+.stats .card .card-body {
+  border: 1px solid red; }
+.stats .card .btn {
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0; }
+
+.bg-orange {
+  background-color: #fd7e14;
+  color: #fff; }
+
+.bg-teal {
+  background-color: #20c997;
+  color: #fff; }
+
+.bg-cyan {
+  background-color: #17a2b8;
+  color: #fff; }
+
+.bg-green {
+  background-color: #28a745;
+  color: #fff; }
+
 /**
  *
  * Footer
