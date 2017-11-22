@@ -94,14 +94,96 @@
 
   .content-header {
     background: transparent;
-    position: relative;
     padding: 10px 10px 0 10px;
     h1 {
       margin: 0;
       font-size: 20px;
     }
     .breadcrumb {
+      background: transparent;
+      font-size: 10px;
+      padding: 7px 0 0 0;
+      li {
+        a {
+          color: #444;
+          text-decoration: none;
+          .fa {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .breadcrumb-item {
+      &+::before {
+        display: inline-block;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        color: #868e96;
+        content: ">\00a0";
+      }
     }
   }
+  .content {
+    padding: 15px;
+    margin-right: auto;
+    padding-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .stats {
+    .card {
+      margin-bottom: 20px;
+      .card-body {
+        .icon {
+          position: absolute;
+          right: 20px;
+          top: 70px;
+          i {
+            font-size: 70px;
+            color: rgba(0,0,0,0.2);
+          }
+        }
+      }
+      .btn {
+        width: 100% !important;
+        background: rgba(0,0,0,0.1);
+        border: none;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .bg-orange {
+    background-color: $orange;
+    color: #fff;
+  }
+  .bg-teal {
+    background-color: $teal;
+    color: #fff;
+  }
+  .bg-cyan {
+    background-color: $cyan;
+    color: #fff;
+  }
+  .bg-green {
+    background-color: $green;
+    color: #fff;
+  }
+
+  /**
+   *
+   * Footer
+   *
+   */
+  footer {
+    background: #fff;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    margin-left: 50px;
+  }
+
+
 }
 
