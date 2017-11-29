@@ -6406,7 +6406,10 @@ a {
       margin-left: 230px;
       border: none;
       min-height: 50px;
-      border-radius: 0; }
+      border-radius: 0;
+      color: #fff; }
+      header .navbar a {
+        color: #fff; }
 
   /**
    * Sidebar

@@ -54,7 +54,11 @@ a {
       margin-left: 230px;
       border: none;
       min-height: 50px;
-      border-radius: 0
+      border-radius: 0;
+      color: #fff;
+      a {
+        color: #fff;
+      }
     }
   }
 
@@ -130,6 +134,11 @@ a {
       margin: 0;
       font-size: 24px;
     }
+  }
+  .content-subheader {
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    background: rgba(0,0,0,0.1);
   }
   .content-header>.breadcrumb {
     float: right;
